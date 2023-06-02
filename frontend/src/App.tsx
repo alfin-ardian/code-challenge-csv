@@ -22,7 +22,7 @@ export default function App({
   data = typeof document !== 'undefined' ? document.getElementById('lincd_data')?.innerText : null,
 }) {
     return (
-    <Html assets={assets} data={data} title="here - LINCD App">
+    <Html assets={assets} data={data} title="Houses - LINCD App">
       <Suspense fallback={<Spinner />}>
         <ErrorBoundary FallbackComponent={Error}>
           <Content />

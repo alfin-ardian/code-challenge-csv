@@ -1,6 +1,6 @@
 {
-  "name": "code-challenge-1",
-  "displayName": "code-challenge-1",
+  "name": "code-challenge-csv",
+  "displayName": "code-challenge-csv",
   "description": "",
   "version": "0.1.0",
   "private": true,
@@ -18,7 +18,6 @@
   "scripts": {
     "start": "npm run server:dev",
     "build": "env-cmd -e production node frontend/scripts/build.js",
-    "import": "env-cmd -e development node./backend/server.js",
     "server:dev": "env-cmd -e development nodemon --watch ../../modules/lincd-server/lib --watch ../../modules/lincd-server/site.webpack.config.js ./backend/server.js",
     "server:prod": "env-cmd -e production nodemon -e js,json s ./backend/server.js"
   },

@@ -12,11 +12,11 @@ export class CodeChallengeBackendProvider extends BackendProvider {
     async importData() {
 
         let mapping = null;
-        let importResult = await this.convertCSVToShapes(path.join('data','other-houses.csv'), House, mapping);
+        let importResult = await this.convertCSVToShapes(path.join('data', 'other-houses.csv'), House, mapping);
         return importResult;
     }
 
-    async convertCSVToShapes(csvPath, shapeClass:typeof Shape,csvFieldsToShapeFieldsMapping):Promise<ShapeSet> {
+    async convertCSVToShapes(csvPath, shapeClass: typeof Shape, csvFieldsToShapeFieldsMapping): Promise<ShapeSet> {
         let result = new ShapeSet();
 
         //TODO: import data from csvPath
@@ -27,7 +27,6 @@ export class CodeChallengeBackendProvider extends BackendProvider {
         // and this method uses that mapping to create the shapes and set their properties.
         // it is up to you how want to make this mapping
         // Note: you can use new shapeClass() to create a new instance of the shapeClass, which in this example is House
-
 
         return result;
     }
